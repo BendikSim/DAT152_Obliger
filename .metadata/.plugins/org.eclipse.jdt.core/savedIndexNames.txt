@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\Bendi\OneDrive\Skrivebord\Skole\5. Semester\Dat152\Excercise\Obliger\.metadata\.plugins\org.eclipse.jdt.core
+1790117025.index
+2949329176.index
+2353125945.index
+2088172220.index
+1925746017.index
+2842528100.index
+3905275770.index

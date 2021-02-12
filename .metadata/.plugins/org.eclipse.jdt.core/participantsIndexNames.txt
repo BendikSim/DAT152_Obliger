@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\Bendi\OneDrive\Skrivebord\Skole\5. Semester\Dat152\Excercise\Obliger\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2174218768.index
+\ObligatoriskInnlevering2\src

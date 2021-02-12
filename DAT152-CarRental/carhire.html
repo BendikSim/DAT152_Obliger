@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <title>Cars - Car Rental AS</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="w3-container w3-black">
+            <!-- Top bar-->
+            <div class="w3-container">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1>Car Rental AS</h1>
+                </a>
+            </div>
+            <!-- <div class="w3-top"> -->
+            <div class="w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" role="button" href="javascript:void(0)" onclick="menuFunction()" aria-label="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CAR HIRE</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOCATIONS</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">OFFERS</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BUSINESS HIRE</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PRODUCTS</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HELP</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GOLD PLUS REVARDS</a>
+            </div>
+            <!-- </div> -->
+
+            <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+            <div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+                <a href="carhire.html" class="w3-bar-item w3-button w3-padding-large" onclick="menuFunction()">CAR HIRE</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large" onclick="menuFunction()">LOCATIONS</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large" onclick="menuFunction()">OFFERS</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large" onclick="menuFunction()">BUSINESS HIRE</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large" onclick="menuFunction()">PRODUCTS</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large" onclick="menuFunction()">HELP</a>
+                <a href="underconstruction.html" class="w3-bar-item w3-button w3-padding-large" onclick="menuFunction()">GOLD PLUS REVARDS</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <div class="w3-container w3-content w3-margin" style="padding-top: 50px; padding-bottom: 100px;">
+            <div class=" w3-black intronav">
+                <button type="menu" class="w3-bar-item w3-button categoryBtn testbtn red-hover" onclick="openCategory(event, 'a')" role="button" aria-label="Class A">Class A</button>
+                <button type="menu" class="w3-bar-item w3-button categoryBtn" onclick="openCategory(event, 'b')" role="button" aria-label="Class B">Class B</button>
+                <button type="menu" class="w3-bar-item w3-button categoryBtn" onclick="openCategory(event, 'c')" role="button" aria-label="Class C">Class C</button>
+                <button type="menu" class="w3-bar-item w3-button categoryBtn" onclick="openCategory(event, 'd')" role="button" aria-label="Class D">Class D</button>
+                <button type="menu" class="w3-bar-item w3-button categoryBtn" onclick="openCategory(event, 'v')" role="button" aria-label="Class V">Class V</button>
+            </div>
+    
+            <form action="ordercar.html">
+    
+                <div id="a" class="w3-container w3-row-padding w3-border category w3-display-container">
+                    <h1 class="w3-margin">Prestige collection</h1>
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <div class="car-image">
+                            <img src="images/volvo-xc60.png" alt="Volvo XC60" style="width: 100%">
+                        </div>
+                        <h2>Volvo XC60</h2>
+                        <p class="w3-opacity">2020 model - 4WD</p>
+                        <p>Five seats</p>
+                        <p>4 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <div class="car-image">
+                            <img src="images/porsche-cayenne.png" alt="Porsche Cayenne" style="width: 100%">
+                        </div>
+                        <h2>Porsche Cayenne</h2>
+                        <p class="w3-opacity">2019 model - 350hp</p>
+                        <p>Five seats</p>
+                        <p>3 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <div class="car-image">
+                            <img src="images/ford-mustang-shelby.png" alt="Ford Mustang Shelby" style="width: 100%">
+                        </div>
+                        <h2>Ford Mustang Shelby</h2>
+                        <p class="w3-opacity">2017 model - 550hp</p>
+                        <p>4 seats</p>
+                        <p>2 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+                </div>
+    
+                <div id="b" class="w3-container w3-row-padding w3-border category w3-display-container" style="display:none">
+    
+                    <h1 class="w3-margin">Full size collection</h1>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/volkswagen-tiguan.png" alt="Volkswagen Tiguan" style="width: 100%">
+                        <h2>Volkswagen Tiguan</h2>
+                        <p class="w3-opacity">2020 model - 4WD</p>
+                        <p>Five seats</p>
+                        <p>3 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/volvo-xc40.png" alt="Volvo XC40" style="width: 100%">
+                        <h2>Volvo XC40</h2>
+                        <p class="w3-opacity">2018 model - 4WD</p>
+                        <p>Five seats</p>
+                        <p>3 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+                </div>
+    
+                <div id="c" class="w3-container w3-row-padding w3-border category w3-display-container" style="display:none">
+    
+                    <h1 class="w3-margin">Standard collection</h1>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/ford-mustang-shelby.png" alt="Ford Mustang Shelby" style="width: 100%">
+                        <h2>Ford Mustang Shelby</h2>
+                        <p class="w3-opacity">2017 model - 550hp</p>
+                        <p>Five seats</p>
+                        <p>2 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/ford-mustang-shelby.png" alt="Ford Mustang Shelby" style="width: 100%">
+                        <h2>Ford Mustang Shelby</h2>
+                        <p class="w3-opacity">2017 model - 550hp</p>
+                        <p>Five seats</p>
+                        <p>2 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/ford-mustang-shelby.png" alt="Ford Mustang Shelby" style="width: 100%">
+                        <h2>Ford Mustang Shelby</h2>
+                        <p class="w3-opacity">2017 model - 550hp</p>
+                        <p>Five seats</p>
+                        <p>2 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+                </div>
+    
+                <div id="d" class="w3-container w3-row-padding w3-border category w3-display-container" style="display:none">
+    
+                    <h1 class="w3-margin">Compact collection</h1>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/ford-mustang-shelby.png" alt="Ford Mustang Shelby" style="width: 100%">
+                        <h2>Ford Mustang Shelby</h2>
+                        <p class="w3-opacity">2017 model - 550hp</p>
+                        <p>Five seats</p>
+                        <p>2 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/ford-mustang-shelby.png" alt="Ford Mustang Shelby" style="width: 100%">
+                        <h2>Ford Mustang Shelby</h2>
+                        <p class="w3-opacity">2017 model - 550hp</p>
+                        <p>Five seats</p>
+                        <p>2 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/ford-mustang-shelby.png" alt="Ford Mustang Shelby" style="width: 100%">
+                        <h2>Ford Mustang Shelby</h2>
+                        <p class="w3-opacity">2017 model - 550hp</p>
+                        <p>Five seats</p>
+                        <p>2 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+                </div>
+    
+                <div id="v" class="w3-container w3-row-padding w3-border category w3-display-container" style="display:none">
+    
+                    <h1 class="w3-margin">Van collection</h1>
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/Ford-transit.png" alt="Ford Transit" style="width: 100%">
+                        <h2>Ford Transit</h2>
+                        <p class="w3-opacity">2017 model</p>
+                        <p>7 seats</p>
+                        <p>5 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/mercedes-v-class.png" alt="Mercedes V-Class" style="width: 100%">
+                        <h2>Mercedes V-Class</h2>
+                        <p class="w3-opacity">2020 model</p>
+                        <p>7 seats</p>
+                        <p>6 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+    
+                    <div class="w3-card w3-padding-large w3-col w3-margin" style="max-width: 300px;">
+                        <img src="images/toyota-caravelle.png" alt="Toyota Caravelle" style="width: 100%">
+                        <h2>Toyota Caravelle</h2>
+                        <p class="w3-opacity">2020 model</p>
+                        <p>Five seats</p>
+                        <p>8 large luggage</p>
+                        <p>$15 USD per day</p>
+                        <button type="submit" class="w3-button w3-round-large red-hover">Reserve</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+
+   <!-- Footer-->
+   <footer>
+    <div class="w3-black">
+        <div class="w3-cell-row">
+            <div class="w3-container w3-cell w3-mobile">
+                <a href="underconstruction.html">Most popular cars</a><br>
+                <a href="underconstruction.html">Top Locations</a>
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <a href="underconstruction.html">Contact information</a><br>
+                <a href="underconstruction.html">About us / FAQ</a><br>
+                <a href="underconstruction.html">Press room</a>
+            </div>
+            <div class="w3-container w3-cell w3-mobile">
+                <a href="underconstruction.html">Privacy policy</a><br>
+                <a href="underconstruction.html">Terms of service</a><br>
+                <a href="underconstruction.html">Become a Hertz employee</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

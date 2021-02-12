@@ -1,0 +1,63 @@
+*:focus {
+    outline: 2px red solid !important;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    min-width: 420px;
+}
+
+main {
+    min-height: 700px;
+}
+
+footer {
+    position: relative;
+    bottom: 0 !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-section {
+    background-image: url("https://nordnorge.com/content/uploads/2019/09/6090703526_34e608a3d4_o-3-1024x521.jpg") !important;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.bookcar {
+    background-color: white;
+    max-width: 400px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+}
+.bookcar input{
+    float: right;
+}
+.bookcar fieldset {
+   border-style: none;    
+}
+
+.social-media {
+    display: inline-flex !important;
+}
+
+.some-links {
+    margin-left: auto;
+    margin-right: 0px;
+    margin-right: 10px;
+}
+
+.red-hover {
+    background-color: rgb(128,0,0);
+    color: white;
+}
